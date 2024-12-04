@@ -1,6 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
 import React, { useState } from 'react'
-import CreateAccount from "./CreateAccount";
 
 function HomePage() {
 
@@ -54,6 +53,7 @@ function HomePage() {
             </form>
             <br />
             <Link to='/CreateAccount'>Create Account</Link>
+            <Link to='/VisitorPage'>Continue as guest</Link>
         </>
     )
 
