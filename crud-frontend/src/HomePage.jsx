@@ -53,6 +53,7 @@ function HomePage() {
             </form>
             <br />
             <Link to='/CreateAccount'>Create Account</Link>
+            <br></br>
             <Link to='/VisitorPage'>Continue as guest</Link>
         </>
     )
