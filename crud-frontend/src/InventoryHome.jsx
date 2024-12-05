@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import AddItemPopup from './AddItemPopup';
+import DeleteItem from './DeleteItem';
 
 function InventoryHome() {
 
@@ -23,9 +24,10 @@ function InventoryHome() {
                     <p>{e.itemName}</p>
                     <p>{e.description}</p>
                     <p>{e.quantity}</p>
+                    <button type='button' id='delete-btn' onClick={DeleteItem}> X </button>
                 </>
             ))}
-
+            <br />
             <button type="button" onClick={() => setButtonPopup(true)}>Add Item To Inventory</button>
             <AddItemPopup trigger={buttonPopup} setTrigger={setButtonPopup} />
 
