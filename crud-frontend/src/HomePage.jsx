@@ -44,7 +44,7 @@ function HomePage() {
                     <p>Username:</p>
                     <input type="text" value={userName} onChange={(e) => setUserName(e.target.value)}/>
                     <p>Password:</p>
-                    <input type="text" value={password} onChange={(e) => setPassword(e.target.value)}/>
+                    <input type="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
                     <br />
                     
                 </div>
